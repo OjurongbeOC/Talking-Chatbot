@@ -1,0 +1,58 @@
+@keyframes clickme{
+			from{
+				color: white;
+			}
+			to{
+				color: gold;
+			}
+		}
+		*{
+			box-sizing: border-box;
+		}
+		html,body{
+			margin: 0;padding: 0;
+		}
+		body{
+			display: flex;justify-content: center;align-items: center;background: rgb(10,20,50);height: 100vh;
+		}
+		.container{
+			background-color: rgb(150,150,150);display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 1.5rem;width: 100%;height: 100vh;
+		}
+		.container h1{
+			text-align: center;font-size: 20px;color: rgb(10,20,50);
+		}
+		.chat{
+			width: 100%;height: 100vh;position: relative;padding: 1.5rem;overflow-y: scroll;background-color: white
+		}
+		.chat h2{
+			text-align: right;color: white;background-color: rgb(50,130,255);padding: 20px 10px;float: right;display: block;clear: both;border-radius: 25px 0px;font-size: 20px;
+		}
+		.chat p{
+			color: rgb(50,130,255);border: 2px solid rgb(50,130,255);padding: 20px 10px;display: block;clear: both;border-radius: 0px 25px;width: 200px;font-size: 20px
+		}
+		.chat button{
+			background: rgb(20,90,200);margin: 2px;padding: 10px 20px;color: white;border: none;cursor: pointer;
+		}
+		.chat  button:hover{
+			background: rgb(100,90,200);
+		}
+	    .clickme{
+	    	border: none;color: white;background-color: rgb(20,20,80);padding: 10px 20px;cursor: pointer;position: absolute;bottom: 3px;right: 3px;animation-name: clickme;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: linear;
+	    }
+	    .clickme:hover{
+	    	background-color: rgb(0,50,80);
+	    } 	
+	    #form{
+            position: absolute;bottom: 3px;display: none;
+	    }
+	    .chat input{
+	    	padding: 10px 20px;
+	    }
+	    @media (min-width: 500px){
+	    	.container{
+	    		width: 80%;
+	    	}
+	    	.chat{
+	    		width: 80%;
+	    	}
+	    }
